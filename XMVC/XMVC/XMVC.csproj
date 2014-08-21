@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A6124F1-D747-45D5-9E42-CE3B97C7F636}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XMVC</RootNamespace>
+    <AssemblyName>XMVC</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ReleaseVersion>1.0</ReleaseVersion>
+    <SynchReleaseVersion>False</SynchReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <GenerateDocumentation>True</GenerateDocumentation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="XDataParser">
+      <HintPath>Plugins\XDataParser.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>Plugins\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Xutility">
+      <HintPath>..\..\..\..\2\trunk\Game\Game\Assets\Scripts\Plugins\Xutility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="PureMVC\Core\Controller.cs" />
+    <Compile Include="PureMVC\Core\Model.cs" />
+    <Compile Include="PureMVC\Core\View.cs" />
+    <Compile Include="PureMVC\Interfaces\ICommand.cs" />
+    <Compile Include="PureMVC\Interfaces\IController.cs" />
+    <Compile Include="PureMVC\Interfaces\IFacade.cs" />
+    <Compile Include="PureMVC\Interfaces\IMediator.cs" />
+    <Compile Include="PureMVC\Interfaces\IModel.cs" />
+    <Compile Include="PureMVC\Interfaces\INotification.cs" />
+    <Compile Include="PureMVC\Interfaces\INotifier.cs" />
+    <Compile Include="PureMVC\Interfaces\IObserver.cs" />
+    <Compile Include="PureMVC\Interfaces\IProxy.cs" />
+    <Compile Include="PureMVC\Interfaces\IView.cs" />
+    <Compile Include="PureMVC\Patterns\Command\MacroCommand.cs" />
+    <Compile Include="PureMVC\Patterns\Command\SimpleCommand.cs" />
+    <Compile Include="PureMVC\Patterns\Facade\Facade.cs" />
+    <Compile Include="PureMVC\Patterns\Mediator\Mediator.cs" />
+    <Compile Include="PureMVC\Patterns\Observer\Notification.cs" />
+    <Compile Include="PureMVC\Patterns\Observer\Notifier.cs" />
+    <Compile Include="PureMVC\Patterns\Observer\Observer.cs" />
+    <Compile Include="PureMVC\Patterns\Proxy\Proxy.cs" />
+    <Compile Include="XApplication.cs" />
+    <Compile Include="Command\StartCommand.cs" />
+    <Compile Include="Mediator\XMediator.cs" />
+    <Compile Include="Mediator\IXMediator.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="PureMVC\" />
+    <Folder Include="VO\" />
+    <Folder Include="Command\" />
+    <Folder Include="Mediator\" />
+    <Folder Include="Proxy\" />
+  </ItemGroup>
+</Project>

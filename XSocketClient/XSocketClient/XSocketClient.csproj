@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7B1F8EC-D4B8-4828-9D8B-CF0BA513A4C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XSocketClient</RootNamespace>
+    <AssemblyName>XSocketClient</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\..\..\..\2\trunk\Game\Game\Assets\Scripts\Plugins</OutputPath>
+    <DefineConstants>DEBUG;UNITY_WP8;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <DocumentationFile>..\..\..\..\..\2\trunk\Game\Game\Assets\Scripts\Plugins\XSocketClient.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\..\..\..\2\trunk\Game\Game\Assets\Scripts\Plugins</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Xutility">
+      <HintPath>..\..\..\..\..\2\trunk\Game\Game\Assets\Scripts\Plugins\Xutility.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="NetworkFacade.cs" />
+    <Compile Include="Interface\IDataWraper.cs" />
+    <Compile Include="Utility\NetDataWraper.cs" />
+    <Compile Include="Interface\INet.cs" />
+    <Compile Include="Utility\GlobalConstant.cs" />
+    <Compile Include="Net\TCPWraper.cs" />
+    <Compile Include="Utility\BItConvert.cs" />
+    <Compile Include="VO\Login.cs" />
+    <Compile Include="VO\CustomerArray.cs" />
+    <Compile Include="VO\Register.cs" />
+    <Compile Include="Net\PingWraper.cs" />
+    <Compile Include="VO\NetworkVOBase.cs" />
+    <Compile Include="VO\Session.cs" />
+    <Compile Include="VO\RoomInfo.cs" />
+    <Compile Include="VO\TableInfo.cs" />
+    <Compile Include="VO\GamePlay.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Interface\" />
+    <Folder Include="Utility\" />
+    <Folder Include="Net\" />
+    <Folder Include="VO\" />
+  </ItemGroup>
+</Project>

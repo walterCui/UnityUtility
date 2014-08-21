@@ -1,0 +1,4 @@
+/Users/walter/workSpace/project/2/trunk/Game/Game/Assets/Scripts/Plugins/XSocketClient.dll.mdb
+/Users/walter/workSpace/project/2/trunk/Game/Game/Assets/Scripts/Plugins/XSocketClient.dll
+/Users/walter/workSpace/project/common/branches/2/XSocketClient/XSocketClient/obj/Debug/XSocketClient.dll
+/Users/walter/workSpace/project/common/branches/2/XSocketClient/XSocketClient/obj/Debug/XSocketClient.dll.mdb

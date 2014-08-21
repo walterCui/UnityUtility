@@ -1,0 +1,1014 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>/Users/walter/workSpace/project/common/trunk/Xutility/Xutility/bin/Debug/Xutility</name>
+    </assembly>
+    <members>
+        <member name="T:XUtility.Helper">
+            <summary>
+            Helper.
+            </summary>
+        </member>
+        <member name="M:XUtility.Helper.GetComponent``1(UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Gets the component.
+            </summary>
+            <returns>The component.</returns>
+            <param name="go">Go.</param>
+            <param name="add">will auto add T if the go has not T, when the add is ture.</param>
+            <typeparam name="T">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:XUtility.Helper.DestroyObject(UnityEngine.Object)">
+            <summary>
+            </summary>
+            <param name="obj">Object.</param>
+        </member>
+        <member name="M:XUtility.Helper.DestroyChildren(UnityEngine.Transform)">
+            <summary>
+            Destroies the children.
+            </summary>
+            <param name="transform">Transform.</param>
+        </member>
+        <member name="M:XUtility.Helper.EqualInt(System.Int32[],System.Int32[])">
+            <summary>
+            Equal the specified obj1 and obj2.
+            deep diff.
+            </summary>
+            <param name="obj1">Obj1.</param>
+            <param name="obj2">Obj2.</param>
+        </member>
+        <member name="M:XUtility.Helper.EqualVector3(UnityEngine.Vector3[],UnityEngine.Vector3[])">
+            <summary>
+            Equals the vector3.
+            </summary>
+            <returns>
+                <c>true</c>, if vector3 was equaled, <c>false</c> otherwise.</returns>
+            <param name="v1">V1.</param>
+            <param name="v2">V2.</param>
+        </member>
+        <member name="M:XUtility.Helper.Equal``1(``0[],``0[])">
+            <summary>
+            Equal the specified obj1 and obj2.
+            </summary>
+            <param name="obj1">Obj1.</param>
+            <param name="obj2">Obj2.</param>
+            <typeparam name="T">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:XUtility.Helper.SetActiveSelf(UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Sets the active self.
+            </summary>
+            <param name="go">Go.</param>
+            <param name="val">If set to <c>true</c> value.</param>
+        </member>
+        <member name="M:XUtility.Helper.SetActive(UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Sets the active.
+            </summary>
+            <param name="go">Go.</param>
+            <param name="val">If set to <c>true</c> value.</param>
+        </member>
+        <member name="M:XUtility.Helper.GetFullName(UnityEngine.Transform)">
+            <summary>
+            Gets the full name.
+            </summary>
+            <returns>The full name.</returns>
+            <param name="transform">Transform.</param>
+        </member>
+        <member name="M:XUtility.Helper.GetComponentInChildren``1(UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Gets the component in children.
+            </summary>
+            <returns>The component in children.</returns>
+            <param name="go">Go.</param>
+            <param name="includeInactive">include Inactive</param>
+            <typeparam name="T">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:XUtility.Helper.GetComponentInParent``1(UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Gets the component in parent.
+            </summary>
+            <returns>The component in parent.</returns>
+            <param name="go">Go.</param>
+            <param name="includeInactive">If set to <c>true</c> include inactive.</param>
+            <typeparam name="T">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:XUtility.Helper.Bezier(UnityEngine.Vector3[],System.Single)">
+            <summary>
+            Bezier the specified v and t.
+            </summary>
+            <param name="v">V.</param>
+            <param name="t">T.</param>
+        </member>
+        <member name="M:XUtility.Helper.Bezier(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+            <summary>
+            Bezier the specified one, two, three and t.
+            </summary>
+            <param name="one">One.</param>
+            <param name="two">Two.</param>
+            <param name="three">Three.</param>
+            <param name="t">T.</param>
+        </member>
+        <member name="M:XUtility.Helper.Fixto(UnityEngine.Transform,UnityEngine.Transform,System.Boolean)">
+            <summary>
+            Fixto the specified transform, parent and normalize.
+            如果是normalize将position ratation 和scale都将normalize.
+            </summary>
+            <param name="transform">Transform.</param>
+            <param name="parent">Parent.</param>
+            <param name="normalize">If set to <c>true</c> is normal.</param>
+        </member>
+        <member name="M:XUtility.Helper.Instantiate(UnityEngine.Object,UnityEngine.Transform,XUtility.Curve,System.Single)">
+            <summary>
+            Instantiate the specified original, parent, curve and t.
+            </summary>
+            <param name="original">Original.</param>
+            <param name="parent">Parent.</param>
+            <param name="curve">Curve.</param>
+            <param name="t">T.</param>
+        </member>
+        <member name="M:XUtility.Helper.FindChild(UnityEngine.Transform,System.String,System.Boolean)">
+            <summary>
+            Finds the child.
+            </summary>
+            <returns>The child.</returns>
+            <param name="parent">Parent.</param>
+            <param name="name">Name.</param>
+            <param name="deep">If set to <c>true</c> deep.</param>
+        </member>
+        <member name="M:XUtility.Helper.Distance(UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)">
+            <summary>
+            Distance the specified a, b and ignoreY.
+            </summary>
+            <param name="a">The alpha component.</param>
+            <param name="b">The blue component.</param>
+            <param name="ignoreZ">If set to <c>true</c> ignore y.</param>
+        </member>
+        <member name="M:XUtility.Helper.EnterRegion(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.Vector3)">
+            <summary>
+            Hit the specified pos, nextPos, height, center and size.
+            </summary>
+            <param name="pos">Position.</param>
+            <param name="nextPos">Next position.</param>
+            <param name="height">Height.</param>
+            <param name="center">Center.</param>
+            <param name="size">Size.</param>
+        </member>
+        <member name="T:GlobalMessageKey">
+            <summary>
+            Global message key.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.NextScreenInEditor">
+            <summary>
+            The next screen in editor.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.PlayerHpChange">
+            <summary>
+            The player hp change.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.PlayerCoinChange">
+            <summary>
+            The player coin change.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.PlayerGetRedSoul">
+            <summary>
+            The player get red soul.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.PlayerGetBlueSoul">
+            <summary>
+            The player get blue soul.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.PlayerHitRedSoul">
+            <summary>
+            The player hit red soul.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.PlayerHitBlueSoul">
+            <summary>
+            The player hit blue soul.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.ShowPassTime">
+            <summary>
+            The show pass time.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.ShowGuideView">
+            <summary>
+            The show guide view.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.ShowAvoidView">
+            <summary>
+            The show avoid view.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.ShowChooseSillViem">
+            <summary>
+            The show choose sill viem.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.LoadSceneStart">
+            <summary>
+            The load scene start.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.LoadSceneEnd">
+            <summary>
+            The load scene end.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.QuitScene">
+            <summary>
+            The quit scene.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.GameOver">
+            <summary>
+            The game over.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.MPOver">
+            <summary>
+            The MP over.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.UseSymbol">
+            <summary>
+            The use symbol.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.EnterBattleScene">
+            <summary>
+            The enter battle scene.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.BattleOver">
+            <summary>
+            The battle over.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.AddNPC">
+            <summary>
+            The add NP.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.NPCDie">
+            <summary>
+            The NPC die.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.KillNPCAward">
+            <summary>
+            The kill NPC award.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.AvoidFail">
+            <summary>
+            The avoid fail.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.AvoidOk">
+            <summary>
+            The avoid ok.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.AddRunNPC">
+            <summary>
+            The add run NP.
+            </summary>
+        </member>
+        <member name="F:GlobalMessageKey.UseSkillAtRun">
+            <summary>
+            The use skill at run.
+            </summary>
+        </member>
+        <member name="T:ShapeType">
+            <summary>
+            Shape type.
+            </summary>
+        </member>
+        <member name="F:ShapeType.Line">
+            <summary>
+            The line.
+            </summary>
+        </member>
+        <member name="F:ShapeType.Curve">
+            <summary>
+            The curve.
+            </summary>
+        </member>
+        <member name="T:MoneyType">
+            <summary>
+            Money type.
+            </summary>
+        </member>
+        <member name="F:MoneyType.Coin">
+            <summary>
+            The coin.
+            </summary>
+        </member>
+        <member name="F:MoneyType.Crystal">
+            <summary>
+            The crystal.
+            </summary>
+        </member>
+        <member name="F:MoneyType.RedSoul">
+            <summary>
+            The red soul.
+            </summary>
+        </member>
+        <member name="F:MoneyType.BlueSoul">
+            <summary>
+            The blue soul.
+            </summary>
+        </member>
+        <member name="F:MoneyType.Max">
+            <summary>
+            The max.
+            </summary>
+        </member>
+        <member name="T:RankType">
+            <summary>
+            Rank type.
+            </summary>
+        </member>
+        <member name="F:RankType.Stars">
+            <summary>
+            The stars.
+            </summary>
+        </member>
+        <member name="F:RankType.PassLevel">
+            <summary>
+            The pass level.
+            </summary>
+        </member>
+        <member name="F:RankType.RunDis">
+            <summary>
+            The run dis.
+            </summary>
+        </member>
+        <member name="F:RankType.Battle">
+            <summary>
+            The battle.
+            </summary>
+        </member>
+        <member name="F:RankType.Max">
+            <summary>
+            The max.
+            </summary>
+        </member>
+        <member name="T:CommandResoultCode">
+            <summary>
+            Resoult code.
+            </summary>
+        </member>
+        <member name="F:CommandResoultCode.Ok">
+            <summary>
+            The ok.
+            </summary>
+        </member>
+        <member name="F:CommandResoultCode.Fail">
+            <summary>
+            The fail.
+            </summary>
+        </member>
+        <member name="F:CommandResoultCode.CoinNotEnough">
+            <summary>
+            The coin not enough.
+            </summary>
+        </member>
+        <member name="F:CommandResoultCode.CrystalNotEnough">
+            <summary>
+            The crystal not enough.
+            </summary>
+        </member>
+        <member name="T:SceneMode">
+            <summary>
+            Scene model.
+            </summary>
+        </member>
+        <member name="F:SceneMode.Unknow">
+            <summary>
+            The unknow.
+            </summary>
+        </member>
+        <member name="F:SceneMode.Run">
+            <summary>
+            The run.
+            </summary>
+        </member>
+        <member name="F:SceneMode.Coin">
+            <summary>
+            The coin.
+            </summary>
+        </member>
+        <member name="F:SceneMode.Pursue">
+            <summary>
+            The pursue.
+            </summary>
+        </member>
+        <member name="F:SceneMode.Symbol">
+            <summary>
+            The symbol.
+            </summary>
+        </member>
+        <member name="F:SceneMode.Massacre">
+            <summary>
+            杀戮模式.
+            The massacre.
+            </summary>
+        </member>
+        <member name="F:SceneMode.Max">
+            <summary>
+            The max.
+            </summary>
+        </member>
+        <member name="T:DirectionEnum">
+            <summary>
+            Direction enum.
+            </summary>
+        </member>
+        <member name="F:DirectionEnum.None">
+            <summary>
+            The none.
+            </summary>
+        </member>
+        <member name="F:DirectionEnum.Up">
+            <summary>
+            Up.
+            </summary>
+        </member>
+        <member name="F:DirectionEnum.Down">
+            <summary>
+            Down.
+            </summary>
+        </member>
+        <member name="F:DirectionEnum.Left">
+            <summary>
+            The left.
+            </summary>
+        </member>
+        <member name="F:DirectionEnum.Right">
+            <summary>
+            The right.
+            </summary>
+        </member>
+        <member name="F:DirectionEnum.All">
+            <summary>
+            All.
+            </summary>
+        </member>
+        <member name="T:GameOverResult">
+            <summary>
+            Game over result.
+            </summary>
+        </member>
+        <member name="F:GameOverResult.Unknow">
+            <summary>
+            The unknow.
+            </summary>
+        </member>
+        <member name="F:GameOverResult.Succeed">
+            <summary>
+            The succeed.
+            </summary>
+        </member>
+        <member name="F:GameOverResult.TimeOver">
+            <summary>
+            The time over.
+            </summary>
+        </member>
+        <member name="F:GameOverResult.PlayerDie">
+            <summary>
+            The player die.
+            </summary>
+        </member>
+        <member name="T:GameLayer">
+            <summary>
+            Game layer.
+            </summary>
+        </member>
+        <member name="F:GameLayer.LayerUI">
+            <summary>
+            The layer U.
+            </summary>
+        </member>
+        <member name="F:GameLayer.LayerPlayer">
+            <summary>
+            The layer player.
+            </summary>
+        </member>
+        <member name="F:GameLayer.LayerNPC">
+            <summary>
+            The layer NP.
+            </summary>
+        </member>
+        <member name="F:GameLayer.LayerWalk">
+            <summary>
+            The layer walk.
+            </summary>
+        </member>
+        <member name="F:GameLayer.Layer2DUIIgnoreRaycast">
+            <summary>
+            The layer2 DUI ignore raycast.
+            </summary>
+        </member>
+        <member name="T:GameTags">
+            <summary>
+            Game tags.
+            </summary>
+        </member>
+        <member name="F:GameTags.TagsPlayer">
+            <summary>
+            The tags player.
+            </summary>
+        </member>
+        <member name="F:GameTags.TagsNpc">
+            <summary>
+            The tags npc.
+            </summary>
+        </member>
+        <member name="F:GameTags.TagsIgnorePress">
+            <summary>
+            The tags ignore press.
+            </summary>
+        </member>
+        <member name="F:GameTags.TagsUIIgnorePress">
+            <summary>
+            The tags user interface ignore press.
+            </summary>
+        </member>
+        <member name="T:XUtility.GlobalLog">
+            <summary>
+            Global log.
+            </summary>
+        </member>
+        <member name="M:XUtility.GlobalLog.Log(System.String)">
+            <summary>
+            Log the specified message.
+            </summary>
+            <param name="message">Message.</param>
+        </member>
+        <member name="M:XUtility.GlobalLog.LogWarning(System.String)">
+            <summary>
+            Logs the warning.
+            </summary>
+            <param name="message">Message.</param>
+        </member>
+        <member name="M:XUtility.GlobalLog.LogError(System.String)">
+            <summary>
+            Logs the error.
+            </summary>
+            <param name="message">Message.</param>
+        </member>
+        <member name="T:XUtility.LogWraper">
+            <summary>
+            Log wraper.
+            </summary>
+        </member>
+        <member name="M:XUtility.LogWraper.#ctor">
+            <summary>
+            Initializes a new instance.
+            </summary>
+        </member>
+        <member name="F:XUtility.LogWraper.Level">
+            <summary>
+            The level.
+            0=all 1 = warning and error 2 == error.
+            </summary>
+        </member>
+        <member name="M:XUtility.LogWraper.GetLog``1">
+            <summary>
+            Gets the log.
+            </summary>
+            <returns>The log.</returns>
+            <typeparam name="T">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:XUtility.LogWraper.Log(System.String)">
+            <summary>
+            Log the specified message.
+            </summary>
+            <param name="message">Message.</param>
+        </member>
+        <member name="M:XUtility.LogWraper.LogWarning(System.String)">
+            <summary>
+            Logs the warning.
+            </summary>
+            <param name="message">Message.</param>
+        </member>
+        <member name="M:XUtility.LogWraper.LogError(System.String)">
+            <summary>
+            Logs the error.
+            </summary>
+            <param name="message">Message.</param>
+        </member>
+        <member name="T:XUtility.MessageRouter`1">
+            <summary>
+            Message router.
+            </summary>
+        </member>
+        <member name="M:XUtility.MessageRouter`1.#ctor">
+            <summary>
+            Initializes a new instance.
+            </summary>
+        </member>
+        <member name="M:XUtility.MessageRouter`1.Subscribe(`0,XUtility.CustomerAction{`0,System.Object})">
+            <summary>
+            Subscribe the specified key and fun.
+            </summary>
+            <param name="key">Key.</param>
+            <param name="fun">Fun.</param>
+        </member>
+        <member name="M:XUtility.MessageRouter`1.Unsubscribe(`0,XUtility.CustomerAction{`0,System.Object})">
+            <summary>
+            Unsubscribe the specified key and fun.
+            </summary>
+            <param name="key">Key.</param>
+            <param name="fun">Fun.</param>
+        </member>
+        <member name="M:XUtility.MessageRouter`1.Notify(`0,System.Object)">
+            <summary>
+            </summary>
+            <param name="key">Key.</param>
+            <param name="param">Parameter.</param>
+        </member>
+        <member name="T:XUtility.GlobalMessageRouter">
+            <summary>
+            Global message router.
+            </summary>
+        </member>
+        <member name="P:XUtility.GlobalMessageRouter.Instance">
+            <summary>
+            Gets the instance.
+            </summary>
+            <value>The instance.</value>
+        </member>
+        <member name="T:XUtility.FSMMachine">
+            <summary>
+            FSM machine.
+            </summary>
+        </member>
+        <member name="M:XUtility.FSMMachine.#ctor">
+            <summary>
+            Initializes a new instance.
+            </summary>
+        </member>
+        <member name="F:XUtility.FSMMachine.states">
+            <summary>
+            The states.
+            </summary>
+        </member>
+        <member name="P:XUtility.FSMMachine.currentState">
+            <summary>
+            Gets the state of the current.
+            </summary>
+            <value>The state of the current.</value>
+        </member>
+        <member name="M:XUtility.FSMMachine.SetState(System.Int32)">
+            <summary>
+            Sets the state.
+            </summary>
+            <param name="stateId">State identifier.</param>
+        </member>
+        <member name="M:XUtility.FSMMachine.SetState(XUtility.FSMState)">
+            <summary>
+            Sets the state.
+            </summary>
+            <param name="state">State.</param>
+        </member>
+        <member name="M:XUtility.FSMMachine.AddState(XUtility.FSMState)">
+            <summary>
+            Adds the state.
+            </summary>
+            <param name="state">State.</param>
+        </member>
+        <member name="M:XUtility.FSMMachine.GetState(System.Int32)">
+            <summary>
+            Gets the state.
+            </summary>
+            <returns>The state.</returns>
+            <param name="id">Identifier.</param>
+        </member>
+        <member name="M:XUtility.FSMMachine.AddTransmission(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Adds the transmission.
+            </summary>
+            <param name="eventId">Event identifier.</param>
+            <param name="fromState">From state.</param>
+            <param name="toState">To state.</param>
+        </member>
+        <member name="M:XUtility.FSMMachine.Transmit(System.Int32)">
+            <summary>
+            Transmit the specified eventId.
+            </summary>
+            <param name="eventId">Event identifier.</param>
+        </member>
+        <member name="M:XUtility.FSMMachine.Transmit(System.Int32,System.Object)">
+            <summary>
+            Transmit the specified eventId and param.
+            </summary>
+            <param name="eventId">Event identifier.</param>
+            <param name="param">Parameter.</param>
+        </member>
+        <member name="M:XUtility.FSMMachine.Update">
+            <summary>
+            Update this instance.
+            </summary>
+        </member>
+        <member name="T:XUtility.FSMState">
+            <summary>
+            FSM state.
+            </summary>
+        </member>
+        <member name="M:XUtility.FSMState.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance.
+            </summary>
+            <param name="idValue">Identifier value.</param>
+        </member>
+        <member name="F:XUtility.FSMState.ID">
+            <summary>
+            The I.
+            </summary>
+        </member>
+        <member name="F:XUtility.FSMState.Machine">
+            <summary>
+            The machine.
+            </summary>
+        </member>
+        <member name="F:XUtility.FSMState.transmissions">
+            <summary>
+            The transmissions.
+            </summary>
+        </member>
+        <member name="M:XUtility.FSMState.Start">
+            <summary>
+            Start this instance.
+            </summary>
+        </member>
+        <member name="M:XUtility.FSMState.Start(System.Object)">
+            <summary>
+            Start the specified param.
+            </summary>
+            <param name="param">Parameter.</param>
+        </member>
+        <member name="M:XUtility.FSMState.Quit">
+            <summary>
+            Quit this instance.
+            </summary>
+        </member>
+        <member name="M:XUtility.FSMState.Run">
+            <summary>
+            Run this instance.
+            </summary>
+        </member>
+        <member name="M:XUtility.FSMState.CanInState">
+            <summary>
+            Determines whether this instance can in state.
+            </summary>
+            <returns>
+                <c>true</c> if this instance can in state; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:XUtility.FSMState.CanQuitState">
+            <summary>
+            Determines whether this instance can quit state.
+            </summary>
+            <returns>
+                <c>true</c> if this instance can quit state; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:XUtility.FSMState.AddTransmission(System.Int32,XUtility.FSMState)">
+            <summary>
+            Adds the transmission.
+            </summary>
+            <param name="eventId">Event identifier.</param>
+            <param name="state">State.</param>
+        </member>
+        <member name="M:XUtility.FSMState.AddTransmission(System.Int32,System.Int32)">
+            <summary>
+            Adds the transmission.
+            </summary>
+            <param name="eventId">Event identifier.</param>
+            <param name="stateId">State identifier.</param>
+        </member>
+        <member name="M:XUtility.FSMState.GetTransmissioin(System.Int32)">
+            <summary>
+            Gets the transmissioin.
+            </summary>
+            <returns>The transmissioin.</returns>
+            <param name="evnetId">Evnet identifier.</param>
+        </member>
+        <member name="T:XUtility.Curve">
+            <summary>
+            Curve.
+            </summary>
+        </member>
+        <member name="M:XUtility.Curve.#ctor(UnityEngine.Vector3[],ShapeType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XUtility.Curve" /> class.
+            </summary>
+            <param name="point">Point.</param>
+            <param name="shape">Shape.</param>
+        </member>
+        <member name="P:XUtility.Curve.Shape">
+            <summary>
+            Gets the shape.
+            </summary>
+            <value>The shape.</value>
+        </member>
+        <member name="M:XUtility.Curve.GetPoint(System.Single)">
+            <summary>
+            Gets the point.
+            </summary>
+            <returns>The point.</returns>
+            <param name="t">T.</param>
+        </member>
+        <member name="T:XUtility.LogConsole">
+            <summary>
+            Log console.
+            </summary>
+        </member>
+        <member name="F:XUtility.LogConsole.Write">
+            <summary>
+            The write.
+            </summary>
+        </member>
+        <member name="T:DontDestory">
+            <summary>
+            Dont destory.
+            </summary>
+        </member>
+        <member name="T:CustomerUpdate">
+            <summary>
+            Customer update.
+            </summary>
+        </member>
+        <member name="P:CustomerUpdate.Instance">
+            <summary>
+            Gets the instance.
+            </summary>
+            <value>The instance.</value>
+        </member>
+        <member name="M:CustomerUpdate.AddUpdate(XUtility.CustomerAction)">
+            <summary>
+            Adds the update.
+            </summary>
+            <param name="method">Method.</param>
+        </member>
+        <member name="M:CustomerUpdate.RemoveUpdate(XUtility.CustomerAction)">
+            <summary>
+            Removes the update.
+            </summary>
+            <param name="method">Method.</param>
+        </member>
+        <member name="M:CustomerUpdate.AddLateUpdate(XUtility.CustomerAction)">
+            <summary>
+            Adds the late update.
+            </summary>
+            <param name="method">Method.</param>
+        </member>
+        <member name="M:CustomerUpdate.RemoveLateUpdate(XUtility.CustomerAction)">
+            <summary>
+            Removes the late update.
+            </summary>
+            <param name="method">Method.</param>
+        </member>
+        <member name="T:XUtility.CustomerAction">
+            <summary>
+            Customer action.
+            </summary>
+        </member>
+        <member name="T:XUtility.CustomerAction`1">
+            <summary>
+            Customer action.
+            </summary>
+        </member>
+        <member name="T:XUtility.CustomerAction`2">
+            <summary>
+            Customer action.
+            </summary>
+        </member>
+        <member name="T:XUtility.CustomerAction`3">
+            <summary>
+            Customer action.
+            </summary>
+        </member>
+        <member name="T:CameraShake">
+            <summary>
+            Camera shake.
+            </summary>
+        </member>
+        <member name="F:CameraShake.Tareget">
+            <summary>
+            The tareget.
+            </summary>
+        </member>
+        <member name="F:CameraShake.Speed">
+            <summary>
+            The speed.
+            </summary>
+        </member>
+        <member name="F:CameraShake.Distance">
+            <summary>
+            The distance.
+            </summary>
+        </member>
+        <member name="F:CameraShake.ShakeTime">
+            <summary>
+            The shake time.
+            </summary>
+        </member>
+        <member name="F:CameraShake.ShakeCount">
+            <summary>
+            The shake count.
+            </summary>
+        </member>
+        <member name="F:CameraShake.Delay">
+            <summary>
+            The delay.
+            </summary>
+        </member>
+        <member name="M:CameraShake.Play">
+            <summary>
+            Play this instance.
+            </summary>
+        </member>
+        <member name="M:CameraShake.Play(UnityEngine.Camera,UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Int32,XUtility.CustomerAction)">
+            <summary>
+            Play the specified target, speed, distance, shakeTime, shakeCount and overCallback.
+            </summary>
+            <param name="target">Target.</param>
+            <param name="speed">Speed.</param>
+            <param name="distance">Distance.</param>
+            <param name="shakeTime">Shake time.</param>
+            <param name="shakeCount">Shake count.</param>
+            <param name="overCallback">Over callback.</param>
+        </member>
+        <member name="M:CameraShake.Stop">
+            <summary>
+            Stop this instance.
+            </summary>
+        </member>
+        <member name="T:XUtility.XPlayerPrefs">
+            <summary>
+            X player prefs.
+            </summary>
+        </member>
+        <member name="M:XUtility.XPlayerPrefs.SetInt(System.String,System.Int32)">
+            <summary>
+            Sets the int.
+            </summary>
+            <param name="key">Key.</param>
+            <param name="value">Value.</param>
+        </member>
+        <member name="M:XUtility.XPlayerPrefs.SetFloat(System.String,System.Single)">
+            <summary>
+            Sets the float.
+            </summary>
+            <param name="key">Key.</param>
+            <param name="value">Value.</param>
+        </member>
+        <member name="M:XUtility.XPlayerPrefs.SetString(System.String,System.String)">
+            <summary>
+            Sets the string.
+            </summary>
+            <param name="key">Key.</param>
+            <param name="value">Value.</param>
+        </member>
+        <member name="M:XUtility.XPlayerPrefs.GetInt(System.String,System.Int32)">
+            <summary>
+            Gets the int.
+            </summary>
+            <returns>The int.</returns>
+            <param name="key">Key.</param>
+            <param name="defaultValue">Default value.</param>
+        </member>
+        <member name="M:XUtility.XPlayerPrefs.GetFloat(System.String,System.Single)">
+            <summary>
+            Gets the float.
+            </summary>
+            <returns>The float.</returns>
+            <param name="key">Key.</param>
+            <param name="defaultValue">Default value.</param>
+        </member>
+        <member name="M:XUtility.XPlayerPrefs.GetString(System.String,System.String)">
+            <summary>
+            Gets the string.
+            </summary>
+            <returns>The string.</returns>
+            <param name="key">Key.</param>
+            <param name="defaultValue">Default value.</param>
+        </member>
+        <member name="M:XUtility.XPlayerPrefs.DeleteAll">
+            <summary>
+            Deletes all.
+            </summary>
+        </member>
+    </members>
+</doc>

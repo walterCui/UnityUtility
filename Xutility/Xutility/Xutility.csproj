@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E47CCF83-FB11-41E5-9E5C-06456C144BB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XUtility</RootNamespace>
+    <AssemblyName>Xutility</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SynchReleaseVersion>False</SynchReleaseVersion>
+    <ReleaseVersion>1.0</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\..\..\2\trunk\Game\Game\Assets\Scripts\Plugins</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <GenerateDocumentation>True</GenerateDocumentation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\..\..\2\trunk\Game\Game\Assets\Scripts\Plugins</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="UnityEditor">
+      <HintPath>Plugins\UnityEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>Plugins\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="GlobalConstant.cs" />
+    <Compile Include="Log\GlobalLog.cs" />
+    <Compile Include="Log\LogWraper.cs" />
+    <Compile Include="Message\MessageRouter.cs" />
+    <Compile Include="Message\GlobalMessageRouter.cs" />
+    <Compile Include="State\FSMMachine.cs" />
+    <Compile Include="State\FSMState.cs" />
+    <Compile Include="Curve.cs" />
+    <Compile Include="Log\LogConsole.cs" />
+    <Compile Include="DontDestory.cs" />
+    <Compile Include="CustomerUpdate.cs" />
+    <Compile Include="CustomerAction.cs" />
+    <Compile Include="CameraShake.cs" />
+    <Compile Include="XPlayerPrefs.cs" />
+    <Compile Include="Resource\ResourceWraper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="State\" />
+    <Folder Include="Log\" />
+    <Folder Include="Message\" />
+    <Folder Include="Resource\" />
+    <Folder Include="IO\" />
+  </ItemGroup>
+</Project>
